@@ -3,7 +3,9 @@
  UNIX_GURU at hotmail dot com
  or @unix_guru on Twitter
  http://arduino-pi.blogspot.ca/2014/04/penguinbot-fun-weekend-arduino-project.html
- 
+
+ https://github.com/michaeljball/PenguinBot
+
  Proportional Steering
  Servomotor to rock body back and forth.
  Two photocells to turn toward and follow light.   ***** Not yet Implemented
