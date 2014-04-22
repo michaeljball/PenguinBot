@@ -47,26 +47,26 @@ char buf[32]; // make this at least big enough for the whole string
     switch(Command[0])
     {
       case 'f':                                                         // Move Forward "Parameter" ticks
-        MotionStop = millis()+atoi(buf);
-        MotionState = FWDCLR;
+        MotionStop = atoi(buf);
+        m1.Set(m1s2h, m1s2b);
         forward();
       break;
 
        case 'b': 
-        MotionStop = millis()+atoi(buf);
-        MotionState = REVERSE;
+        MotionStop = atoi(buf);
+        m1.Set(m1s2h, m1s2b);
         reverse();
        break;
 
        case 'r': 
-        MotionStop = millis()+atoi(buf);
-        MotionState = FWDBLKTR;
+        MotionStop = atoi(buf);
+        m1.Set(m1s2h, m1s2b);
         right();
         break;
 
        case 'l': 
-        MotionStop = millis()+atoi(buf);
-        MotionState = FWDBLKTL;
+        MotionStop = atoi(buf);
+        m1.Set(m1s2h, m1s2b);
         left();
         break;
 
@@ -76,7 +76,7 @@ char buf[32]; // make this at least big enough for the whole string
 
        case 'x': 
         MotionStop = 0;
-        MotionState = STOPPED;
+        m1.Set(m1s1h, m1s1b);
         halt();
         break;
         
